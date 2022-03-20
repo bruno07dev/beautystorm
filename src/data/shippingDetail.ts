@@ -1,27 +1,27 @@
 export const LISTSHIPPINGDETAILS = [
   {
     id: 1,
-    address: 'South 23rd East Street 94109 Salt Lake Country',
-    country: 'United States'
+    address: 'Rua Santa Catarina, 3089 - São Cristóvão, Jundiaí-SP CEP: 40443-804',
+    country: 'Brasil'
   },
   {
     id: 2,
-    address: 'South 23rd East Street 94109 Salt Lake Country',
-    country: 'United States'
+    address: 'Rua Santa Catarina, 3089 - São Cristóvão, Jundiaí-SP CEP: 40443-804',
+    country: 'Brasil'
   },
   {
     id: 3,
-    address: 'South 23rd East Street 94109 Salt Lake Country',
-    country: 'United States'
+    address: 'Rua Santa Catarina, 3089 - São Cristóvão, Jundiaí-SP CEP: 40443-804',
+    country: 'Brasil'
   },
   {
     id: 4,
-    address: 'South 23rd East Street 94109 Salt Lake Country',
-    country: 'United States'
+    address: 'Rua Santa Catarina, 3089 - São Cristóvão, Jundiaí-SP CEP: 40443-804',
+    country: 'Brasil'
   },
   {
     id: 5,
-    address: 'South 23rd East Street 94109 Salt Lake Country',
-    country: 'United States'
+    address: 'Rua Santa Catarina, 3089 - São Cristóvão, Jundiaí-SP CEP: 40443-804',
+    country: 'Brasil'
   }
 ]

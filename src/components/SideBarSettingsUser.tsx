@@ -16,22 +16,22 @@ const SideBarSettingsUser = () => {
       justifyContent="space-between"
       alignItems="center"
     >
-      <Heading>My account</Heading>
-      <Heading size="md">Personal Details</Heading>
+      <Heading>Minha conta</Heading>
+      <Heading size="md">Meus dados</Heading>
       <List>
         <ListItem>
-          <Link to={url}>My profile</Link>
+          <Link to={url}>Meu perfil</Link>
         </ListItem>
         <ListItem>
-          <Link to={`${url}/shipping-details`}>Shipping Details</Link>
+          <Link to={`${url}/shipping-details`}>Detalhes de envio</Link>
         </ListItem>
       </List>
-      <Heading size="md">Order Details</Heading>
+      <Heading size="md">Meu pedido</Heading>
       <List>
         <ListItem>
-          <Link to={`${url}/order-history`}>Order History</Link>
+          <Link to={`${url}/order-history`}>Histórico de pedidos</Link>
         </ListItem>
-        <ListItem cursor="pointer" onClick={logout}>Logout</ListItem>
+        <ListItem cursor="pointer" onClick={logout}>Sair</ListItem>
       </List>
     </Stack>
   )

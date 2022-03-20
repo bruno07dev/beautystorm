@@ -3,18 +3,18 @@ import { Categories } from '../interfaces/Categories'
 export const categories: Array<Categories> = [
   {
     id: 1,
-    name: 'electronics'
+    name: 'Perfumaria'
   },
   {
     id: 2,
-    name: 'jewelery'
+    name: 'Maquiagem'
   },
   {
     id: 3,
-    name: "men's clothing"
+    name: 'Cabelos'
   },
   {
     id: 4,
-    name: "women's clothing"
+    name: 'Corpo'
   }
 ]

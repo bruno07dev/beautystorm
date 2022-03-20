@@ -8,8 +8,7 @@ import {
   Stack,
   Text,
   VisuallyHidden,
-  useColorModeValue,
-  Image
+  useColorModeValue
 } from '@chakra-ui/react'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
@@ -21,7 +20,6 @@ const Logo = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <Image src='logo.svg'></Image>
     </svg>
   )
 }

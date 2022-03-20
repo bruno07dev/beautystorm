@@ -15,21 +15,20 @@ const ProfileScreen = () => {
   return (
     <Tabs>
       <TabList>
-        <Tab>Personal Data</Tab>
-        <Tab>Password Change</Tab>
+        <Tab>Dados pessoais</Tab>
+        <Tab>Alterar senha</Tab>
       </TabList>
 
       <TabPanels>
         <TabPanel>
           <Text>
-            Feel free to edit any of your details below so your account is
-            always up to date
+            Atualize seus dados quando achar necessário
           </Text>
           <FormSettingsUser />
           <Text>
-            At brand name, we attach great importance to privacy issues and are
-            commited to protecting the personal data of our user. Learn more
-            about how we care and use oyour personale data in the{' '}
+            Na BeautyStorm, atribuímos grande importância às questões de privacidade e estamos
+            comprometidos em proteger os dados pessoais de nosso usuário. Saiba mais
+            sobre como cuidamos e usamos seus dados pessoais {' '}
             <Text as={Link} color="green">
               Privacy Policy
             </Text>
@@ -37,9 +36,8 @@ const ProfileScreen = () => {
         </TabPanel>
         <TabPanel>
           <Text>
-            If you want to change the password to access your account, enter the
-            following information: Your current email address is
-            john.doe@example.com
+            Alteração de senha: seu email atual é
+            email@example.com
           </Text>
           <FormSettingsUserPassword />
         </TabPanel>

@@ -44,10 +44,10 @@ function HomeScreen() {
             align={'center'}
             justify={'center'}
           >
-            <Text>Summer Collection</Text>
-            <Heading> Colorful summer dresses are alreadyin store</Heading>
+            <Text>Coleção de verão</Text>
+            <Heading> A coleção de verão já está disponível</Heading>
             <Button bgColor={'green'} size={'lg'} color={'#fff'}>
-              Learn more...
+              Veja mais...
             </Button>
           </Stack>
           <Stack
@@ -71,10 +71,10 @@ function HomeScreen() {
         {/* Grid */}
         <Center mb={'.5rem'}>
           <Heading as={'h3'} fontWeight={'none'} size={'2xl'}>
-            Share your Look
+            Compartilhe a sua vibe
           </Heading>
         </Center>
-        <Text fontWeight={'bold'}>#YourLook</Text>
+        <Text fontWeight={'bold'}>#minhavibe</Text>
         <Grid
           h="600px"
           templateRows={{
@@ -141,20 +141,22 @@ function HomeScreen() {
         <NewsLetter />
         {/* Best sellers  */}
         <Stack as={'section'} mt={4}>
-          {loading ? (
+          {loading
+            ? (
             <>
               <LoadingScreen />
             </>
-          ) : (
+              )
+            : (
             <>
               <Center>
                 <Heading as={'h3'} size={'2xl'}>
-                  Best Seller
+                  Melhor escolha
                 </Heading>
               </Center>
               <GridProducts products={products.slice(0, 3)} />
             </>
-          )}
+              )}
         </Stack>
         {/* End Similar Products  */}
       </Flex>

@@ -3,7 +3,7 @@ import React from 'react'
 const RegisterScreen = () => {
   return (
     <div>
-      <h3>Register</h3>
+      <h3>Registrar</h3>
     </div>
   )
 }

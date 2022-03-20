@@ -34,10 +34,10 @@ const MenuListAvatar = () => {
         </MenuButton>
         <MenuList>
           <MenuItem as={Link} to="/settings">
-            Settings User
+            Meus dados
           </MenuItem>
           <MenuDivider />
-          <MenuItem onClick={logout}>Logout</MenuItem>
+          <MenuItem onClick={logout}>Sair</MenuItem>
         </MenuList>
       </Menu>
     </>

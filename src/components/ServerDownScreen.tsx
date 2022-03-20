@@ -20,8 +20,8 @@ const ServerDownScreen = () => {
       spacing={3}
     >
       <Image w={'500px'} src="/server_down.svg" />
-      <Heading size={'lg'}>Upps. An Error ocurred</Heading>
-      <Button onClick={handleTryAgain}>Try again!</Button>
+      <Heading size={'lg'}>Ops. Ocorreu um erro</Heading>
+      <Button onClick={handleTryAgain}>Tente novamente!</Button>
     </Stack>
   )
 }

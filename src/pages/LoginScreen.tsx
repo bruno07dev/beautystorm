@@ -30,16 +30,16 @@ const LoginScreen = () => {
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Stack spacing={4} w={'full'} maxW={'md'}>
-          <Heading fontSize={'2xl'}>Sign in to your account</Heading>
+          <Heading fontSize={'2xl'}>Acessar minha conta</Heading>
           <Formik
             initialValues={{ username: '', password: '' }}
             validationSchema={Yup.object({
               username: Yup.string()
-                .email('Invalid Email Address')
-                .required('Required'),
+                .email('Email inválido')
+                .required('Email obrigatório'),
               password: Yup.string()
-                .min(8, 'The filed password is invalid. Min 8characters')
-                .required('Required')
+                .min(8, 'Senha inválida. Mínimo 8 caracteres')
+                .required('Senha obrigatória')
             })}
             onSubmit={({ username, password }, actions) => {
               login({ username, password })
@@ -48,22 +48,22 @@ const LoginScreen = () => {
           >
             <Form>
               <FormControl id="email">
-                <FormLabel>Email address</FormLabel>
+                <FormLabel>Email</FormLabel>
                 <Input
                   as={Field}
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Digite seu email"
                   autoComplete="off"
                   name="username"
                 />
                 <ErrorMessage component="section" name="username" />
               </FormControl>
               <FormControl id="password">
-                <FormLabel>Password</FormLabel>
+                <FormLabel>Senha</FormLabel>
                 <Input
                   as={Field}
                   type="password"
-                  placeholder="Enter your password"
+                  placeholder="Digite sua senha"
                   name="password"
                 />
               </FormControl>
@@ -79,7 +79,7 @@ const LoginScreen = () => {
                   colorScheme={'blue'}
                   variant={'solid'}
                 >
-                  {loading ? 'Loading...' : 'Sign In'}
+                  {loading ? 'Carregando...' : 'Entrar'}
                 </Button>
               </Stack>
             </Form>

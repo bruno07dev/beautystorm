@@ -28,8 +28,8 @@ const ProductComponent = ({ product }: { product: Product }) => {
   const handleAddToCartProduct = ({ product }: { product: Product }) => {
     if (!isLoggen) {
       toast({
-        title: 'Sign in',
-        description: 'Hi, For add to favorites / add to cart, you sign in',
+        title: 'Entrar',
+        description: 'Olá! Para adicionar itens à lista de desejos e à sacola você precisa estar logado',
         status: 'warning',
         duration: 3000,
         isClosable: true
@@ -39,8 +39,8 @@ const ProductComponent = ({ product }: { product: Product }) => {
 
     setCartProducts((products) => [...products, product])
     toast({
-      title: 'Good Choice',
-      description: `The product ${product.title} was added successfully`,
+      title: 'Muito bem',
+      description: `O item ${product.title} foi adicionado à sacola`,
       status: 'success',
       duration: 3000,
       isClosable: true
@@ -50,8 +50,8 @@ const ProductComponent = ({ product }: { product: Product }) => {
   const handleToWishList = (e: any) => {
     if (!isLoggen) {
       toast({
-        title: 'Sign in',
-        description: 'Hi, For add to favorites / add to cart, you sign in',
+        title: 'Entrar',
+        description: 'Olá! Para adicionar itens à lista de desejos e à sacola você precisa estar logado',
         status: 'warning',
         duration: 3000,
         isClosable: true
@@ -61,8 +61,8 @@ const ProductComponent = ({ product }: { product: Product }) => {
 
     setWishList((products) => [...products, product])
     toast({
-      title: 'Good Choice',
-      description: `The product ${product.title} was added successfully`,
+      title: 'Muito bem',
+      description: `O item ${product.title} foi adicionado à sacola`,
       status: 'success',
       duration: 3000,
       isClosable: true
