@@ -30,7 +30,11 @@ const OrderHistory = () => {
           >
             <Image width={'300'} height={'300'} src={'/empty-cart.svg'} />
             <Heading size={'lg'}>Você ainda não efetuou nenhum pedido</Heading>
-            <Button as={Link} to="/">
+            <Button as={Link} to="/" color={'white'}
+                bg={'#00a470'}
+                _hover={{
+                  bg: '#f38992'
+                }}>
               Comprar agora!
             </Button>
           </Stack>

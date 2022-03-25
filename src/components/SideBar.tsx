@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from 'react'
-import { Stack, Heading, Checkbox } from '@chakra-ui/react'
+import { Stack, Heading, Button, Checkbox } from '@chakra-ui/react'
 import { categories } from '../data/categories'
 import useGetAllProducts from '../hooks/useGetAllProducts'
 import { Product } from '../interfaces/Product'
@@ -48,17 +48,45 @@ const SideBar = () => {
       </Stack>
       <hr />
       <Heading as={'h3'} size={'md'} mb={'1rem'}>
-        Fragrância
+        Cores
+      </Heading>
+      <Stack
+        spacing={2}
+        direction={'row'}
+        maxW={'150px'}
+        minW={'150px'}
+        padding={'1'}
+      >
+        <Button
+          bgColor={'pink'}
+          _hover={{
+            bgColor: 'pink.300'
+          }}
+        ></Button>
+        <Button
+          bgColor={'red'}
+          _hover={{
+            bgColor: 'red.300'
+          }}
+        ></Button>
+        <Button
+          bgColor={'gray'}
+          _hover={{
+            bgColor: 'gray.300'
+          }}
+        ></Button>
+      </Stack>
+      <hr />
+      <Heading as={'h3'} size={'md'} mb={'1rem'}>
+        Tamanho
       </Heading>
       <Stack spacing={3} direction="column">
         <Checkbox colorScheme="green" defaultIsChecked>
-          Todas as fragrâncias
+          Todos os tamanhos
         </Checkbox>
-        <Checkbox colorScheme="green">Cítrico</Checkbox>
-        <Checkbox colorScheme="green">Floral</Checkbox>
-        <Checkbox colorScheme="green">Amadeirado</Checkbox>
-        <Checkbox colorScheme="green">Frutal</Checkbox>
-        <Checkbox colorScheme="green">Oriental</Checkbox>
+        <Checkbox colorScheme="green">SM</Checkbox>
+        <Checkbox colorScheme="green">MD</Checkbox>
+        <Checkbox colorScheme="green">LG</Checkbox>
       </Stack>
       <hr />
       <Heading as={'h3'} size={'md'} mb={'1rem'}>
@@ -68,11 +96,10 @@ const SideBar = () => {
         <Checkbox colorScheme="green" defaultIsChecked>
           Todos os preços
         </Checkbox>
-        <Checkbox colorScheme="green">Até R$49,00</Checkbox>
-        <Checkbox colorScheme="green">R$49,00 a R$99,00</Checkbox>
-        <Checkbox colorScheme="green">R$99,00 a R$149,00</Checkbox>
-        <Checkbox colorScheme="green">R$149,00 a R$199,00</Checkbox>
-        <Checkbox colorScheme="green">Acima de R$199,00</Checkbox>
+        <Checkbox colorScheme="green">R$10</Checkbox>
+        <Checkbox colorScheme="green">R$30</Checkbox>
+        <Checkbox colorScheme="green">R$50</Checkbox>
+        <Checkbox colorScheme="green">R$70</Checkbox>
       </Stack>
     </Stack>
   )

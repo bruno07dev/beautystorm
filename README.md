@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="Logo" src="src/assets/logo.svg" width="200px">
+</h1>
+
 <h3 align="center">
   ReactJS Application for beautystorm project
 </h3>
@@ -15,7 +19,12 @@
 ## 🛍️ About the project
 
 
-Web aplication of beautystorm project - made with ReactJS, TypeScript styled-components, unForm and react-router-dom.
+Web aplication of beautystorm project - made with ReactJS, TypeScript, Styledchackra, and Vite.
+
+<h1 align="center">
+  <img alt="Screen" src="src/assets/telalogin.png" width="400px">
+  <img alt="Screen" src="src/assets/telaprodutos.png" width="400px">
+</h1>
 
 Project in development
 
@@ -27,17 +36,16 @@ Technologies that I used to develop this web client
 - [TypeScript](https://www.typescriptlang.org/)
 - [React Router Dom](https://reactrouter.com/)
 - [React Icons](https://react-icons.github.io/react-icons)
-- [UnForm](https://unform.dev/) [💜](https://rocketseat.com.br/)
 - [Yup](https://github.com/jquense/yup)
-- [Styled Components](https://styled-components.com/)
-- [Polished](https://github.com/styled-components/polished)
+- [StyledChackra](https://chakra-ui.com/)
 - [Axios](https://github.com/axios/axios)
 - [Husky](https://github.com/typicode/husky)
-- [Commitlint](https://github.com/conventional-changelog/commitlint)
-- [Commitizen](https://github.com/commitizen/cz-cli)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
+- [FakestoreAPI](https://fakestoreapi.com)
+- [Vite](https://vitejs.dev/) 
+
 
 ## 💻 Getting started
 
@@ -60,7 +68,7 @@ $ yarn
 
 # Runs the app in the development mode.\
 
-$ yarn start
+$ yarn vite
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

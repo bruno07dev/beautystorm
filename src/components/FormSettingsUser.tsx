@@ -67,7 +67,9 @@ const FormSettingsUser = () => {
           name="email"
         />
       </FormControl>
-      <Button mb={'1rem'} bgColor="green" type="submit">
+      <Button mb={'1rem'} color={'white'} bg="#00a470" _hover={{
+        bg: '#f38992'
+      }} type="submit">
         Atualizar
       </Button>
     </form>

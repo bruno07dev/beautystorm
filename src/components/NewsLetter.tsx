@@ -145,12 +145,12 @@ export default function NewsLetter() {
           }}
         />
         <Button
-          bg={'blue.400'}
+          bg={'#00a470'}
           rounded={'full'}
           color={'white'}
           flex={'1 0 auto'}
-          _hover={{ bg: 'blue.500' }}
-          _focus={{ bg: 'blue.500' }}
+          _hover={{ bg: '#f38992' }}
+          _focus={{ bg: '#f38992' }}
         >
           Inscrever
         </Button>

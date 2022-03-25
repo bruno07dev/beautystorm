@@ -38,7 +38,7 @@ function HomeScreen() {
           <Stack
             width={{
               base: '100%',
-              md: '70%'
+              md: '100%'
             }}
             direction={'column'}
             align={'center'}
@@ -46,7 +46,9 @@ function HomeScreen() {
           >
             <Text>Coleção de verão</Text>
             <Heading> A coleção de verão já está disponível</Heading>
-            <Button bgColor={'green'} size={'lg'} color={'#fff'}>
+            <Button bgColor={'#00a470'} _hover={{
+              bg: '#f38992'
+            }} size={'lg'} color={'#fff'}>
               Veja mais...
             </Button>
           </Stack>
@@ -59,39 +61,45 @@ function HomeScreen() {
             direction={'row'}
             justify={'flex-end'}
           >
-
+            <Image
+              src={
+                './src/assets/verao.jpg'
+              }
+              alt={'summer'}
+            />
           </Stack>
         </Stack>
         {/* End First */}
+
+        {/* Best sellers  */}
+        <Stack as={'section'} mt={4}>
+          {loading
+            ? (
+              <>
+                <LoadingScreen />
+              </>
+              )
+            : (
+              <>
+                <Center>
+                  <Heading as={'h3'} size={'2xl'}>
+                    Melhor escolha
+                  </Heading>
+                </Center>
+                <GridProducts products={products.slice(0, 3)} />
+              </>
+              )}
+        </Stack>
+        {/* End Similar Products  */}
         {/* Grid */}
         <Center mb={'.5rem'}>
-          <Heading as={'h3'} fontWeight={'none'} size={'2xl'}>
+          <Heading as={'h4'} fontWeight={'none'} size={'2xl'}>
             Compartilhe a sua vibe
           </Heading>
         </Center>
 
         {/* End Grid */}
         <NewsLetter />
-        {/* Best sellers  */}
-        <Stack as={'section'} mt={4}>
-          {loading
-            ? (
-            <>
-              <LoadingScreen />
-            </>
-              )
-            : (
-            <>
-              <Center>
-                <Heading as={'h3'} size={'2xl'}>
-                  Melhor escolha
-                </Heading>
-              </Center>
-              <GridProducts products={products.slice(0, 3)} />
-            </>
-              )}
-        </Stack>
-        {/* End Similar Products  */}
       </Flex>
     </>
   )

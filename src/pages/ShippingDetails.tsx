@@ -45,11 +45,12 @@ const ShippingDetails = () => {
                       <Text fontWeight="bold">{d.country}</Text>
                     </Td>
                     <Td>
-                      <Button bgColor="blue.300" mr={2}>
+                      <Button color={'white'} bgColor="blue.300" mr={2}>
                         Editar
                       </Button>
                       <Button
                         onClick={() => handleDeleteAddress(d.id)}
+                        color={'white'}
                         bgColor="red"
                       >
                         Excluir
@@ -61,7 +62,9 @@ const ShippingDetails = () => {
               <Tfoot>
                 <Tr>
                   <Td>
-                    <Button onClick={onOpen} bgColor="green">
+                    <Button onClick={onOpen} color={'white'} bg="#00a470" _hover={{
+                      bg: '#f38992'
+                    }}>
                       Adicionar novo endereço
                     </Button>
                   </Td>

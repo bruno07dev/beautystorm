@@ -78,7 +78,9 @@ const FormSettingsUserPassword = () => {
           />
         </FormControl>
       </Flex>
-      <Button type="submit" mb={'1rem'} bgColor="green">
+      <Button type="submit" mb={'1rem'} color={'white'} bg="#00a470" _hover={{
+        bg: '#f38992'
+      }}>
         Atualizar
       </Button>
     </form>

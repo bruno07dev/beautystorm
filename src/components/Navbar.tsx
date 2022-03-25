@@ -51,22 +51,22 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '',
     children: [
       {
-        label: 'Perfumaria',
-        subLabel: 'Fragrância, o seu segredo',
+        label: 'Eletrônicos',
+        subLabel: 'Encontre o que procura',
         href: '/products/category/electronics'
       },
       {
-        label: 'Maquiagem',
+        label: 'Joalharia',
         subLabel: 'Não é um sonho, é a sua vez',
         href: '/products/category/jewelery'
       },
       {
-        label: 'Cabelos',
+        label: 'Roupas masculinas',
         subLabel: 'Para cada tipo, uma solução',
         href: "/products/category/men's clothing"
       },
       {
-        label: 'Corpo',
+        label: 'Roupas femininas',
         subLabel: 'Experimente, sinta e apaixone-se',
         href: "/products/category/women's clothing"
       }
@@ -309,10 +309,10 @@ export default function NavBar() {
                 fontSize={'sm'}
                 fontWeight={600}
                 color={'white'}
-                bg={'pink.400'}
+                bg={'#00a470'}
                 href={'#'}
                 _hover={{
-                  bg: 'pink.300'
+                  bg: '#f38992'
                 }}
               >
                 Entrar

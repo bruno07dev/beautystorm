@@ -62,7 +62,7 @@ const SingleProductScreen = () => {
     }
 
     toast({
-      title: 'Good Choice',
+      title: 'Muito bem',
       description: `O item ${product.title} foi adicionado à sacola`,
       status: 'success',
       duration: 3000,
@@ -100,12 +100,12 @@ const SingleProductScreen = () => {
           <Flex direction={'row'}>
             <Flex width={'70%'} justify={'flex-start'} align={'center'}>
               <Text>
-                <b>${product.price}</b>
+                <b>R${product.price}</b>
               </Text>
             </Flex>
             <RatingStart
               justify={'flex-end'}
-              text={'Rating'}
+              text={'Avaliações'}
               rating={product.rating.rate}
             />
           </Flex>
@@ -124,7 +124,7 @@ const SingleProductScreen = () => {
               width={'50%'}
             >
               <Text>
-                <b> Category: </b>
+                <b> Categoria: </b>
                 {product.category}.
               </Text>
             </Flex>
@@ -136,14 +136,14 @@ const SingleProductScreen = () => {
               width={'50%'}
             >
               <Link href={'#'}>
-                <Text>Size Guide</Text>
+                <Text>Guia de tamanhos</Text>
               </Link>
             </Flex>
           </Flex>
 
           {/* Select Size */}
           <Box as={'section'} width={'50%'}>
-            <Select placeholder="Size" variant="filled">
+            <Select placeholder="Tamanhos" variant="filled">
               <option value="option1">S</option>
               <option value="option2">M</option>
               <option value="option3">LG</option>
@@ -173,12 +173,18 @@ const SingleProductScreen = () => {
             <Button
               onClick={() => hanldeAddProductToCart({ product })}
               width={'xs'}
-              colorScheme={'whatsapp'}
+              color={'white'}
+              bg={'#00a470'}
+              _hover={{
+                bg: '#f38992'
+              }}
               size={'lg'}
             >
               Adicionar à sacola
             </Button>
-            <Button width={'xs'} colorScheme={'teal'} size={'lg'}>
+            <Button width={'xs'} color={'white'} bg={'#1687a3'} _hover={{
+              bg: '#7294c2'
+            }} size={'lg'}>
               Retirar na Loja
             </Button>
           </Stack>
@@ -246,7 +252,7 @@ const SingleProductScreen = () => {
                   'Carregando produtos...'
                 )
               : (
-              <GridProducts products={productsCategory.slice(0, 3)} />
+                <GridProducts products={productsCategory.slice(0, 3)} />
                 )}
           </Stack>
           {/* End Similar Products  */}

@@ -95,7 +95,7 @@ const ProductComponent = ({ product }: { product: Product }) => {
         {title}
       </Heading>
 
-      <Text size={'lg'}>${price}</Text>
+      <Text size={'lg'}>R${price}</Text>
 
       <RatingStart
         rating={product.rating.rate}
